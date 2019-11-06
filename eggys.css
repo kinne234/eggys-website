@@ -8,6 +8,8 @@ body {
     background-color: white;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
 .container {
     background-color: transparent;
     height: 800px;
