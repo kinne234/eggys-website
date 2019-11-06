@@ -1,0 +1,609 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    background-color: white;
+}
+
+.container {
+    background-color: transparent;
+    height: 800px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    color: #000000;
+    text-align: center;
+}
+
+header {
+    background-color: #CC0000;
+    height: 140px;
+    width: 100%;
+    border: 1px solid #CC0000;
+    box-shadow: #111111;
+}
+
+.logo {
+    height: 94px;
+    width: 218px;
+    margin-top: 20px;
+}
+
+.logo-container {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Begin Navigation CSS */
+
+nav {
+    background-color: transparent;
+    margin: 0 auto;
+    background-size: cover;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+.navlink {
+    color: #ffffff;
+    font-size: 2vw;
+    font-family: Montserrat, sans-serif;
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+button a:hover {
+    color: #202020;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    color: #ffffff;
+    font-size: 2vw;
+    font-family: Montserrat, sans-serif;
+    font-weight: lighter;
+    padding: 16px;
+    border: none;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    color: #CC0000;
+    font-size: 20px;
+    font-family: Montserrat, sans-serif;
+    text-decoration: none;
+    font-weight: lighter;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #202020; color: #ffffff;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: transparent; color: #202020;}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 100px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.nav-container-left {
+    display: inline-block;
+    margin-right: 100px;
+    vertical-align: middle;
+    margin-top: 15px;
+}
+
+.nav-container-right {
+    display: inline-block;
+    margin-left: 100px;
+    vertical-align: middle;
+    margin-top: 15px;
+}
+
+.sidebar {
+    height: 240px;
+    width: 0;
+    position: absolute;
+    display: none;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 50px;
+    padding-bottom: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Montserrat, sans-serif;
+    color: #CC0000;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #dbdbdb;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    font-size: 30px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    padding: 30px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: transparent; color: #202020;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+    display: none;
+    left: 0;
+}
+
+/* Home page CSS */
+
+.home-section {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-image: url("img/pancakefrontpage.jpg");
+    background-size: cover;
+}
+
+.body {
+    font-family: Montserrat, sans-serif;;
+    position: absolute;
+    left: 8%;
+    top: 250px;
+    text-align: left;
+    width: 41%;
+}
+.slogan {
+    font-size: 2.5vw;
+    color: #ffffff;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.text {
+    font-size: 1.5vw;
+    color: #202020;
+    font-weight: normal;
+    position: absolute;
+}
+
+.deal {
+    position: absolute;
+    right: 8%;
+    top: 375px;
+}
+
+footer {
+    padding: 20px;
+    background-color: #202020;
+    color: white;
+    font-family: Montserrat, sans-serif;
+}
+
+
+/* Menu pages CSS */
+
+.menuimageMN {
+    width: 100%;
+    height: 250px;
+    margin: 0 auto;
+    background-image: url("img/msp.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.menuimageCHI {
+    width: 100%;
+    height: 250px;
+    margin: 0 auto;
+    background-image: url("img/chicago.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header {
+    font-size: 30px;
+    color: #CC0000;
+    font-weight: bold;
+    padding-top: 40px;
+    font-family: Montserrat, sans-serif;
+}
+
+.menu {
+    padding-top: 20px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.zoom {
+    transition: transform 1s; /* Animation */
+    margin: 0 auto;
+    width: 380px;
+    display: inline-block;
+    background-size: contain;
+}
+
+.zoom:hover {
+    transform: scale(1.75); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.menutext {
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+    color: #202020;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+
+.menulink {
+    background-color: #CC0000;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: lighter;
+    padding: 10px;
+}
+
+.menulink:hover {
+    background-color: #dbdbdb;
+    color: #CC0000;
+}
+
+/* About page CSS */
+
+.quote {
+    font-size: 30px;
+    color: #CC0000;
+    font-weight: bold;
+    padding-top: 40px;
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+}
+
+.aboutimage {
+    width: 100%;
+    height: 250px;
+    margin: 0 auto;
+    background-image: url("img/aboutimage.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.aboutcontainer {
+    text-align: left;
+    padding-left: 10%;
+    padding-top: 50px;
+    width: 65%;
+    padding-bottom: 100px;
+}
+
+.mascot {
+    position: absolute;
+    right: 6%;
+    top: 530px;
+    width: 30%;
+    height: auto;
+    background-size: contain;
+}
+
+.aboutparagraph {
+    font-size: 16px;
+    color: #202020;
+    font-family: Montserrat, sans-serif;
+    font-weight: normal;
+}
+
+.aboutbold {
+    color: #CC0000;
+    font-weight: bold;
+}
+
+.abouth2 {
+    font-size: 30px;
+    color: #202020;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Locations page CSS */
+
+.minneapolis {
+    width: 75%;
+    height: 400px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.chicago {
+    width: 75%;
+    height: 350px;
+    margin: 0 auto;
+}
+
+.map-container1 {
+    float: right;
+    display: inline-block;
+    position: relative;
+    top: 0;
+}
+
+.map-container2 {
+    float: right;
+    display: inline-block;
+    position: relative;
+}
+
+.facebook {
+    width: 40px;
+    height: 40px;
+    background: url("img/facebook.png") no-repeat;
+    display: block;
+    float: left;
+}
+.facebook:hover {
+    background: url("img/facebook2.png") no-repeat;
+}
+
+.instagram {
+    width: 40px;
+    height: 40px;
+    background: url("img/instagram.png") no-repeat;
+    display: block;
+    float: left;
+    margin-left: 10px;
+}
+.instagram:hover {
+    background: url("img/instagram2.png") no-repeat;
+}
+
+iframe {
+    width: 45vw;
+    height: 300px;
+}
+
+.locationsh2 {
+    font-size: 30px;
+    color: #202020;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    text-align: left;
+    padding-right: 40px;
+}
+
+.locationsparagraph {
+    font-size: 1.75vw;
+    color: #202020;
+    font-family: Montserrat, sans-serif;
+    font-weight: lighter;
+    text-align: left;
+    margin-right: 20px;
+}
+
+/* Gallery page CSS */
+
+.gallery-container {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 140px;
+    height: auto;
+}
+
+.gallery-image {
+    height: auto;
+    width: 100%;
+    padding: 0;
+    display: block;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    width: 100%;
+    height: 900px;
+    position: relative;
+    display: block;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev {
+    cursor: pointer;
+    position: fixed;
+    left: 40px;
+    top: 55%;
+    width: auto;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    transition: 1s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    cursor: pointer;
+    position: fixed;
+    top: 55%;
+    padding-right: 40px;
+    width: auto;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    transition: 1s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    color: rgba(0,0,0,0.8);
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2.5s;
+    animation-name: fade;
+    animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+
+/* All pages resizing */
+
+@media (max-width: 900px) {
+    .navlink {display: none;}
+    .dropbtn {display: none;}
+    .sidebar {display: block;}
+    #main {display: block; position: absolute; left: 0;}
+    .logo {position: absolute; top: 22px; right: 40px; width: 131px; height: 56px;}
+    .logo-container {display: block;}
+}
+
+/* Home page resizing */
+
+@media (max-width: 1120px) {
+    .text {font-size: 17px;}
+    .slogan {font-size: 27px;}
+    .body {width: 470px;}
+}
+
+@media (max-width: 600px) {
+    .body {
+        width: 430px;
+        top: 215px;
+    }
+
+    .deal {
+        top: 410px;
+        left: 8%;
+    }
+}
+
+    /* Menu pages resizing */
+
+    @media (max-width: 1150px) {
+        .zoom {
+            background-size: cover;
+            width: 90%;
+        }
+
+        .zoom:hover {
+            transform: scale(1);
+        }
+    }
+
+    /* About page & Locations page resizing */
+
+    @media (max-width: 1100px) {
+        .mascot {
+            overflow: hidden;
+            background-size: auto;
+        }
+
+        .aboutparagraph {
+            font-size: 14px;
+        }
+
+        .locationsparagraph {font-size: 17px;}
+    }
+
+    @media (max-width: 1000px) {
+        iframe {width: 30vw; height: 250px;}
+    }
+
+    @media (max-width: 800px) {
+        .aboutcontainer {
+            width: 100%;
+            padding-right: 10%
+        }
+
+        .mascot {
+            display: none;
+        }
+    }
+
+    /* Gallery page resizing */
+
+
+@media (max-width: 1150px) {
+    .slideshow-container, .next, .prev {
+        display: none;
+    }
+
+    .gallery-container {
+        display: block;
+        position: absolute;
+    }
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eggy's Locations</title>
+    <link rel="stylesheet" type="text/css" href="eggys.css">
+    <link rel="shortcut icon" href="img/favicon16_6WT_icon.ico">
+</head>
+<body>
+<div class="container">
+    <header>
+        <!--Hidden until 900px-->
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size: 24px; padding-top: 15px;">x</a>
+            <a href="about.html">About</a>
+            <a href="minneapolis.html">Minneapolis Menu</a>
+            <a href="chicago.html">Chicago Menu</a>
+            <a href="locations.html">Locations</a>
+            <a href="gallery.html">Gallery</a>
+        </div>
+
+        <div id="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        </div>
+
+        <nav>
+            <div class="nav-container-left">
+                <div class="dropdown">
+                    <button style="margin-right: 20px;" class="dropbtn">Menu</button>
+                    <div class="dropdown-content">
+                        <a href="minneapolis.html">Minneapolis</a>
+                        <a href="chicago.html">Chicago</a>
+                    </div>
+                </div>
+                <button><a href="locations.html" class="navlink">Locations</a></button>
+            </div>
+            <div class="logo-container">
+                <a href="home.html"><img src="img/eggys.png" class="logo" alt="Eggy's Logo"></a>
+            </div>
+            <div class="nav-container-right">
+                <button style="margin-right: 20px;"><a href="about.html" class="navlink">About</a></button>
+                <button><a href="gallery.html" class="navlink">Gallery</a></button>
+            </div>
+        </nav>
+    </header>
+    <!--Header Ends Here-->
+    <section class="header"><h1>Locations</h1></section>
+    <div class="minneapolis">
+        <section class="map-container1">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2822.758023467265!2d-93.28268444862762!3d44.96891027899558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b332bf7d5ad42b%3A0x4242543009f6ffda!2sEggy&#39;s%20Minneapolis!5e0!3m2!1sen!2sus!4v1571782933414!5m2!1sen!2sus" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </section>
+        <h2 class="locationsh2">Minneapolis</h2><br>
+        <p class="locationsparagraph">120 14th Street W, <br>Minneapolis, MN 55403<br>
+            (763)310-3449
+        <br><br>
+        Monday-Sunday<br>7:00am-3:00pm</p>
+        <br>
+        <a href="https://www.facebook.com/eggysdiner/"><div class="facebook"></div></a>
+        <a href="https://www.instagram.com/eggysmn/"><div class="instagram"></div></a>
+    </div>
+
+    <div class="chicago">
+        <section class="map-container2">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.3499587477645!2d-87.62101704871418!3d41.88533027911965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2ca801e50dff%3A0xd89b461e675f2220!2sEggy&#39;s%20Diner!5e0!3m2!1sen!2sus!4v1571783170970!5m2!1sen!2sus" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </section>
+        <h2 class="locationsh2">Chicago</h2><br>
+        <p class="locationsparagraph">333 E Benton Pl #103,<br> Chicago, IL 60601<br>
+            (773)234-3449
+        <br><br>
+        Monday-Sunday<br>7:00am-3:00pm
+        </p>
+        <br>
+        <a href="https://www.facebook.com/EggysChicago/"><div class="facebook"></div></a>
+        <a href="https://www.instagram.com/eggyschi/"><div class="instagram"></div></a>
+    </div>
+    <footer>
+        EGGYSDINER ©2019
+    </footer>
+</div>
+<script>
+    function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+
+    }
+</script>
+</body>
+</html>

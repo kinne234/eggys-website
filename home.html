@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eggy's Diner</title>
+    <link rel="stylesheet" type="text/css" href="eggys.css">
+    <link rel="shortcut icon" href="img/favicon16_6WT_icon.ico">
+</head>
+<body>
+<div class="container">
+    <header>
+<!--Hidden until 900px-->
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size: 24px; padding-top: 15px;">x</a>
+    <a href="about.html">About</a>
+    <a href="minneapolis.html">Minneapolis Menu</a>
+    <a href="chicago.html">Chicago Menu</a>
+    <a href="locations.html">Locations</a>
+    <a href="gallery.html">Gallery</a>
+</div>
+
+<div id="main">
+    <button class="openbtn" onclick="openNav()">&#9776;</button>
+</div>
+    <nav>
+        <div class="nav-container-left">
+            <div class="dropdown">
+                <button style="margin-right: 20px;" class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                <a href="minneapolis.html">Minneapolis</a>
+                <a href="chicago.html">Chicago</a>
+            </div>
+            </div>
+        <button><a href="locations.html" class="navlink">Locations</a></button>
+        </div>
+        <div class="logo-container">
+            <a href="home.html"><img src="img/eggys.png" class="logo" alt="Eggy's Logo"></a>
+        </div>
+        <div class="nav-container-right">
+        <button style="margin-right: 20px;"><a href="about.html" class="navlink">About</a></button>
+        <button><a href="gallery.html" class="navlink">Gallery</a></button>
+        </div>
+    </nav>
+</header>
+<!--Header Ends Here-->
+    <section class="home-section"></section>
+    <div class="body">
+        <p class="slogan">Welcome to Eggy's Diner:<br>
+            Home of urban comfort food.</p>
+        <p class="text">We wanted Eggy's to have somewhat of a "Mayberry" feel to it, similar to diners of the 1960's. When you step foot in our door, experience a real sense of community. Enjoy dishes that remind you of home cooking with a focus on freshness, local ingredient sourcing and seasonality.</p>
+    </div>
+
+    <img src="img/coupon.png" alt="Eggy's Deal" class="deal">
+
+    <footer>
+            EGGYSDINER ©2019
+    </footer>
+</div>
+<script>
+    function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+
+    }
+</script>
+</body>
+</html>

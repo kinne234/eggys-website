@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Eggy's</title>
+    <link rel="stylesheet" type="text/css" href="eggys.css">
+    <link rel="shortcut icon" href="img/favicon16_6WT_icon.ico">
+</head>
+<body>
+<div class="container">
+    <header>
+        <!--Hidden until 900px-->
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size: 24px; padding-top: 15px;">x</a>
+            <a href="about.html">About</a>
+            <a href="minneapolis.html">Minneapolis Menu</a>
+            <a href="chicago.html">Chicago Menu</a>
+            <a href="locations.html">Locations</a>
+            <a href="gallery.html">Gallery</a>
+        </div>
+
+        <div id="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        </div>
+
+        <nav>
+            <div class="nav-container-left">
+                <div class="dropdown">
+                    <button style="margin-right: 20px;" class="dropbtn">Menu</button>
+                    <div class="dropdown-content">
+                        <a href="minneapolis.html">Minneapolis</a>
+                        <a href="chicago.html">Chicago</a>
+                    </div>
+                </div>
+                <button><a href="locations.html" class="navlink">Locations</a></button>
+            </div>
+            <div class="logo-container">
+                <a href="home.html"><img src="img/eggys.png" class="logo" alt="Eggy's Logo"></a>
+            </div>
+            <div class="nav-container-right">
+                <button style="margin-right: 20px;"><a href="about.html" class="navlink">About</a></button>
+                <button><a href="gallery.html" class="navlink">Gallery</a></button>
+            </div>
+        </nav>
+    </header>
+    <!--Header Ends Here-->
+    <section class="aboutimage"></section>
+    <section class="quote"><h1 class="abouth1">About Eggy's</h1></section>
+    <section class="aboutcontainer">
+        <img src="img/mascot.png" alt="Eggy Mascot" class="mascot">
+        <p class="aboutparagraph">Eggy's is an urban, hip, neighborhood café serving all-day breakfast, lunch, family-style dinner & baked goods made from seasonal, local ingredients. We want everyone to feel a sense of community while enjoying delicious food inspired by home-cooking.</p>
+<br>
+        <p class="aboutparagraph">While the name may conjur visions of breakfast, the restaurant is in fact named after one of the owner's childhood friends, Robert Mallin, who was nicknamed "EGGY" (after his self-described egg-shaped head) back in the late 1960's. Characterized by his friends as loyal, fair and philanthropic, Robert "Eggy" Mallin personifies what Eggy's is all about: family, friends and community.</p>
+        <h2 class="abouth2">Meet Eggy</h2><br>
+        <p class="aboutparagraph"><b class="aboutbold">Born:</b> February 28, 1963 in Edgewater Hospital (Chicago, IL).</p>
+        <br>
+        <p class="aboutparagraph"><b class="aboutbold">How did you get your nickname?</b> I’ve always had a freakishly large head. Actually this caricature of me is drawn to scale. I’m basically a real life bobble-head doll.</p>
+        <br>
+        <p class="aboutparagraph"><b class="aboutbold">Hobbies:</b> I have completed 10 iron man races and over 30 Marathons, which is especially impressive when you consider that my giant egg-shaped melon isn’t very aerodynamic.</p>
+        <br>
+        <p class="aboutparagraph"><b class="aboutbold">Passions:</b> Family, fitness, and eating at Eggy’s (not necessarily in that order).</p>
+        <br>
+        <p class="aboutparagraph"><b class="aboutbold">Random Thought:</b> Humpty Dumpty was pushed!</p>
+    </section>
+
+
+    <footer>
+        EGGYSDINER ©2019
+    </footer>
+</div>
+<script>
+    function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+
+    }
+</script>
+</body>
+</html>

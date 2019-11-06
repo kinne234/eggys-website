@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chicago Menu</title>
+    <link rel="stylesheet" type="text/css" href="eggys.css">
+    <link rel="shortcut icon" href="img/favicon16_6WT_icon.ico">
+</head>
+<body>
+<div class="container">
+    <!--Hidden until 900px-->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size: 24px; padding-top: 15px;">x</a>
+        <a href="about.html">About</a>
+        <a href="minneapolis.html">Minneapolis Menu</a>
+        <a href="chicago.html">Chicago Menu</a>
+        <a href="locations.html">Locations</a>
+        <a href="gallery.html">Gallery</a>
+    </div>
+
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+    </div>
+
+    <header>
+        <nav>
+            <div class="nav-container-left">
+                <div class="dropdown">
+                    <button style="margin-right: 20px;" class="dropbtn">Menu</button>
+                    <div class="dropdown-content">
+                        <a href="minneapolis.html">Minneapolis</a>
+                        <a href="chicago.html">Chicago</a>
+                    </div>
+                </div>
+                <button><a href="locations.html" class="navlink">Locations</a></button>
+            </div>
+            <div class="logo-container">
+                <a href="home.html"><img src="img/eggys.png" class="logo" alt="Eggy's Logo"></a>
+            </div>
+            <div class="nav-container-right">
+                <button style="margin-right: 20px;"><a href="about.html" class="navlink">About</a></button>
+                <button><a href="gallery.html" class="navlink">Gallery</a></button>
+            </div>
+        </nav>
+    </header>
+    <!--Header Ends Here-->
+    <section class="menuimageCHI"></section>
+    <section class="header"><h1>Chicago Menu</h1></section>
+    <section class="menu">
+        <a href="img/chi-menu1.jpg"><img src="img/chi-menu1.jpg" alt="Eggy's Menu 1" class="zoom"></a>
+        <a href="img/chi-menu2.jpg"> <img src="img/chi-menu2.jpg" alt="Eggy's Menu 2" class="zoom"></a>
+        <a href="img/chi-menu3.jpg"> <img src="img/chi-menu3.jpg" alt="Eggy's Menu 3" class="zoom"></a>
+    </section>
+    <p class="menutext">Carry Out: 773.234.EGGY (3449)<br><br>
+        <a href="https://www.grubhub.com/restaurant/eggys-urban-diner-333-e-benton-pl-ste-103-chicago/277492" class="menulink">GrubHub</a>
+    </p>
+    <footer>
+        EGGYSDINER ©2019
+    </footer>
+</div>
+<script>
+    function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+
+    }
+</script>
+</body>
+</html>
